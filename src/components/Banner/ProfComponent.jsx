@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { AiOutlineInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import img from './myPics.jpeg'
