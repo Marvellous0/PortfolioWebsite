@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import img from './myPics.jpeg'
+import img from './my-pics.jpg'
 
 const ProfComponent = () => {
 
@@ -31,7 +31,7 @@ const ProfComponent = () => {
 
           <div className="parentCont">
             <button>Let's talk</button>
-            <div id="cv" onClick={() => window.location.replace("https://drive.google.com/file/d/1yim97i6aXbl1ox3Oddv7QJlC1I83DY-B/view?usp=sharing")}>Check out CV</div>
+            <div id="cv" onClick={() => window.location.replace("https://drive.google.com/file/d/16ys9zs_ZXoRwWWO1trdyo88GYkz8Z-eh/view?usp=sharing")}>Check out CV</div>
           </div>
 
           <Social>
@@ -43,7 +43,7 @@ const ProfComponent = () => {
                 </a>
               </span>
               <span>
-                <a href="https://linkedin.com/in/adeoye-marvellous-18193a228/">
+                <a href="https://www.linkedin.com/in/marvellous-adeoye-b8b6b3213/">
                   <FaLinkedinIn />
                 </a>
               </span>
@@ -175,27 +175,32 @@ const Social = styled.div`
     }
   }
 `;
+
 const Profile = styled.div`
-height: 35em;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
-    width: 20rem;
-    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
-    border-radius: 50%;
-    @media (max-width: 790px) {
-      width: 20rem;
-      border-radius: 20%;
+
+    @media (max-width: 1024px) {
+      max-width: 350px;
     }
 
-    @media (max-width: 660px) {
-      width: 18rem;
-      border-radius: 20%;
+    @media (max-width: 768px) {
+      max-width: 300px;
     }
 
     @media (max-width: 640px) {
-      width: 100%;
+      max-width: 250px;
       border-radius: 20%;
     }
   }
@@ -204,3 +209,4 @@ height: 35em;
     transform: translateY(-10px);
   }
 `;
+

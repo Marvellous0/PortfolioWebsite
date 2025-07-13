@@ -6,25 +6,25 @@ import styled from 'styled-components';
 
 let data = [
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324124/Yt-portfolio/ui5_mnvdaw.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "/atlaxa.png",
+        disc : "Atlaxa empowers African entrepreneurs to sell to the word.",
+        link: "https://atlaxa.com/"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661324074/Yt-portfolio/ui4_jku3ol.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "/funaab.png",
+        disc : "A university system with result-processing",
+        link: "https://portal.unaab.edu.ng/"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323981/Yt-portfolio/ui2_wtollo.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "/idh.png",
+        disc : "Idh- a system that allows IPPIS to take data of MDA employees and subsequently take biometrics capturing of these employees",
+        link: "https://idh.org/"
     },
     {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323980/Yt-portfolio/ui3_akynn4.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
+        img : "/jalsa.png",
+        disc : "Jalsa- a registration Portal for JALSA(an event that takes place annually).",
+        link: "https://jalsasalana.ng/"
     },
-    {
-        img : "https://res.cloudinary.com/ghazni/image/upload/v1661323979/Yt-portfolio/ui1_n3uiaz.png",
-        disc : "Lorem ipsum dolor sit amet consectetur adipisicing elit.Eveniet iure rerum obcaecati et laborum earum!"
-    }
 ];
 
 var settings = {
@@ -67,6 +67,7 @@ var settings = {
       }
     ]
   };
+  
 const SliderComp = () => {
   const arrowRef = useRef(null);
     let sliderProject = "";

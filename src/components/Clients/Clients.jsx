@@ -7,38 +7,43 @@ import { Slide } from 'react-awesome-reveal';
 
 let clients = [
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 3,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      name: "Sarah Johnson",
+      position: "Product Manager at HealthTech",
+      img_url: "https://randomuser.me/api/portraits/women/44.jpg",
+      stars: 5,
+      disc: `Working with Marvellous was a seamless experience. She quickly understood our project goals and translated them into a functional and intuitive user interface. Her attention to detail is commendable.`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 4,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      name: "Carlos Mendes",
+      position: "Founder of EduStart",
+      img_url: "https://randomuser.me/api/portraits/men/65.jpg",
+      stars: 4,
+      disc: `Marvellous delivered a beautiful and efficient solution for our e-learning platform. Communication was prompt, and feedback was always well received and applied. Highly recommend.`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      name: "Amina Yusuf",
+      position: "Tech Lead at FinVerse",
+      img_url: "https://randomuser.me/api/portraits/women/68.jpg",
+      stars: 5,
+      disc: `She brought life to our frontend! The responsiveness, animations, and code structure were top-tier. It’s rare to find someone who balances design sensibility with clean code.`
     },
     {
-        name : "John Michel",
-        position : "web developer",
-        img_url : "https://t4.ftcdn.net/jpg/02/90/27/39/360_F_290273933_ukYZjDv8nqgpOBcBUo5CQyFcxAzYlZRW.jpg",
-        stars : 5,
-        disc : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Temporibus consequuntur dolores labore natus similique nemo doloribus cum accusantium adipisci maiores.`
+      name: "David Lee",
+      position: "Senior Software Engineer at SoftSphere",
+      img_url: "https://randomuser.me/api/portraits/men/23.jpg",
+      stars: 4,
+      disc: `We had a tight deadline, and Marvellous stepped in and delivered a React component library that was scalable and reusable. We’ve integrated it into multiple products since then.`
     },
-]
+    {
+      name: "Chloe Dubois",
+      position: "UX Designer at ZenTech",
+      img_url: "https://randomuser.me/api/portraits/women/35.jpg",
+      stars: 5,
+      disc: `I collaborated with Marvellous on a dashboard redesign. Her ability to bring wireframes to life with pixel-perfect implementation was exactly what we needed.`
+    }
+  ];
+
+  
 var settings = {
     dots: true,
     infinite: true,

@@ -1,34 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
-import {IoIosQuote} from "react-icons/io";
-import {AiOutlineStar} from "react-icons/ai";
+import { IoIosQuote } from "react-icons/io";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const ClientSlider = (props) => {
-    const {name, position, img_url, stars, disc} = props.item;
-  return (
-    <Container>
-        <Header>
-            <span className='quote'><IoIosQuote/></span>
-            <div>
-                {Array(stars).fill().map((_, i) => (
-                    <span className='star' key={i}>
-                        <AiOutlineStar/>
-                    </span>
-                ))}
-            </div>
-        </Header>
-        <Body>
-            {disc}
-        </Body>
-        <Footer>
-            <img src={img_url} alt={name} />
-            <div className="details">
-                <h1>{name}</h1>
-                <p>{position}</p>
-            </div>
-        </Footer>
-    </Container>
-  )
+    const { name, position, img_url, stars, disc } = props.item;
+    return (
+        <Container>
+            <Header>
+                <span className='quote'><IoIosQuote /></span>
+                <div>
+                    {[...Array(5)].map((_, i) => (
+                        <span className='star' key={i}>
+                            {i < stars ? <AiFillStar /> : <AiOutlineStar />}
+                        </span>
+                    ))}
+                </div>
+            </Header>
+            <Body>
+                {disc}
+            </Body>
+            <Footer>
+                <img src={img_url} alt={name} />
+                <div className="details">
+                    <h1>{name}</h1>
+                    <p>{position}</p>
+                </div>
+            </Footer>
+        </Container>
+    )
 }
 
 export default ClientSlider

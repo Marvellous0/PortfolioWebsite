@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Project = (props) => {
-    const { img, disc } = props.item;
+    const { img, disc, link } = props.item;
   return (
     <Container className='project'>
-        <img src={img} alt="project" />
+        <img src={img} alt="project" style={{ width: '100%', height: 'auto' }}/>
         <div className="disc">
             <h1>Description</h1>
             <p>{disc}
-            <a href="/https://frontent-test.netlify.app/">demo</a>
+            <a href={link}>demo</a>
             </p>
         </div>
     </Container>
